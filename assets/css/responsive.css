@@ -1,0 +1,307 @@
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+.seat-book {
+padding: 40px 30px;
+}
+hr {
+margin-bottom: 20px !important;
+}
+.rtcs-bus-box {
+padding: 18px 12px 24px 12px;
+margin-bottom: 20px;
+}
+.bus-operator-inner {
+padding: 30px 30px 30px 30px;
+}
+.pvt-bus-item {
+margin-right: 24px;
+margin-bottom: 17px;
+}
+.rtcs-bus-img {
+width: 40px ;
+height: 40px;
+margin-bottom: 22px;
+}
+.pvt-bus-box .pvt-bus-item:last-child {
+margin-bottom: 0px
+}
+.pvt-bus-box .pvt-bus-item:nth-child(16) {
+margin-bottom: 0px
+}
+.pvt-bus-box .pvt-bus-item:nth-child(17) {
+margin-bottom: 0px
+}
+.main{
+padding: 50px 0px 0px 0px;
+}
+.logo img {
+width: 150px !important;
+}
+.home-footer {
+position: relative;
+width: 100%;
+background-color: #fff;
+margin-top: 20px;
+bottom: -11rem;
+z-index: 1;
+}
+.tab-view{display: none;}
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+.pvt-bus-box {
+max-height: 245px;
+overflow-y: scroll;
+}
+.rtcs-bus-box {
+padding: 18px 17px 22px 17px !important;
+margin-bottom: 18px !important;
+margin-right: 11px;
+}
+.rtcs-bus-img {
+width: 35px ;
+height: 35px ;
+margin-bottom: 15px;
+}
+.custom-overflow-x {
+overflow-x: scroll;
+}
+.form-title h3 {
+font-size: 18px;}
+.tab-view{display: none;}
+.filtter-btn {display: block;}
+}
+@media (min-width: 992px) and (max-width: 1199.99px) {}
+@media (min-width: 768px) and (max-width: 991.99px) {
+.container-box {
+padding: 0 20px !important;
+}
+div.input-block input {
+padding: 17.7px 26px !important;
+}
+.custom-btn {
+padding: 20px 15px;
+}
+.main {
+padding: 22px 0px 0px 0px;
+}
+.booking-form {
+padding: 26px 30px 24px 30px !important;
+}
+.booking-form-box {
+margin-bottom: 20px;
+}
+.logo img {
+width: 160px !important;
+}
+.user-img img {
+max-width: 35px;
+}
+.user-info h3 {
+font-size: 14px;
+}
+.user-info p {
+font-size: 12px;
+}
+.header-btm p {
+font-size: 12px;
+}
+.header-gap {
+padding: 0px 20px !important;
+}
+.pvt-bus-item {
+margin-right: 36px;
+}
+.bus-operator-title h3 {
+margin-bottom: 23px;
+}
+.tab-view{display: block;}
+.desktop-view{display: none;}
+.rtcs-bus-box{
+min-width: 104px;
+min-height: 130px;
+margin-right: 36px !important;
+padding: 19px 20px 19px 20px;
+}
+.rtcs-bus-img {
+width: 60px ;
+height: 60px;
+margin-bottom: 19px;
+}
+.rtcs-bus-title p {
+font-size: 12px;
+}
+
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+.filtter-btn {display: block;}
+.tab-view{display: none;}
+.side-bar {display: none;}
+.main-content {margin-left: 0px;}
+.booking-form {padding: 30px 24px 30px 24px;}
+.form-title h3{font-size: 18px;}
+div.input-block input {padding: 12px 12px; font-size: 18px;margin-bottom: 18px;}
+div.input-block span.placeholder{margin: 13px 0;top: -2px; font-size: 14px; left: 8px;}
+.input-block img {top:0px; margin-top:0; right:0;}
+.booking-form ::placeholder {font-size: 14px;}
+.custom-btn{padding: 15px 15px; font-size: 14px;}
+.swipe-icon {padding:0.5px 0px;}
+.bus-operator-title h3{font-size: 18px;margin-bottom: 16px;}
+.bus-operator-inner { padding: 30px 30px 17px 30px;}
+.bus-operator-title h3{font-size: 16px;}
+.pvt-bus-item {padding: 12px 12px; margin-right: 18px; margin-bottom: 22px;}
+.pvt-bus-box { max-height: 191px;overflow-y: auto;}
+.rtcs-bus-box {
+width: 80px;
+height: 110px;
+margin-bottom: 18px !important;
+margin-right: 11px;
+}
+.rtcs-bus-title p {
+font-size: 10px;
+}
+.main{
+padding: 50px 0px 0px 0px;
+}
+.logo img {
+width: 150px !important;
+}
+.search-footer{
+bottom: -4rem;
+position: relative;
+z-index: -1;
+}
+.home-footer {
+position: relative;
+width: 100%;
+background-color: #fff;
+margin-top: 20px;
+bottom: -11rem;
+z-index: 1;
+}
+.swipe-icon {
+padding: 10px 0px;
+}
+.header-btm p{
+font-size: 10px;
+}
+.header-btm p span{
+font-size: 12px;
+}
+}
+@media (min-width: 1600px) and (max-width: 1920px) {
+.filtter-btn {display: none;}
+.tab-view{display: none;}
+}
+/* Desktop /  */
+@media (max-width:1920px) {
+.container-box {
+max-width: 1920px;
+padding: 0 50px;
+}
+}
+@media (max-width:1600px) {
+.seat-book {
+padding: 40px 30px;
+}
+hr {
+margin-bottom: 20px !important;
+}
+.rtcs-bus-box {
+width: 80px;
+height: 110px;
+margin-bottom: 18px !important;
+margin-right: 11px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.bus-operator-inner {
+padding: 30px 30px 30px 30px;
+}
+.pvt-bus-box .pvt-bus-item:last-child {
+margin-bottom: 0px
+}
+.pvt-bus-box .pvt-bus-item:nth-child(16) {
+margin-bottom: 0px
+}
+.pvt-bus-box .pvt-bus-item:nth-child(17) {
+margin-bottom: 0px
+}
+}
+@media (max-width:1280px) {
+.booking-form {padding: 30px 24px 39px 24px;}
+.form-title h3{font-size: 18px;}
+div.input-block input {padding: 12px 12px; font-size: 18px;margin-bottom: 18px;}
+div.input-block span.placeholder{margin: 13px 0;top: -2px; font-size: 14px;}
+.input-block img {top:0px; margin-top:0; right:0;}
+.booking-form ::placeholder {font-size: 14px;}
+.custom-btn{padding: 15px 15px; font-size: 14px;}
+.swipe-icon {padding:0.5px 0px;}
+.bus-operator-title h3{font-size: 18px;margin-bottom: 16px;}
+.bus-operator-inner { padding: 30px 30px 27px 30px;}
+.bus-operator-title h3{font-size: 16px;}
+/*.pvt-bus-item {padding: 12px 12px; margin-right: 12px; margin-bottom: 19px;}*/
+.pvt-bus-box { max-height: 182px;overflow-y: auto;}
+.custom-overflow-x {overflow-x: scroll;}
+/*.rtcs-bus-img { width: 30px; height: 30px;margin-bottom: 14px;}*/
+.rtcs-bus-box {
+width: 80px;
+height: 110px;
+margin-bottom: 18px !important;
+margin-right: 11px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+/*.rtcs-bus-title p {
+font-size: 10px;
+}*/
+.pvt-bus-inner p {
+font-size: 12.5px;
+}
+.main{
+padding: 50px 0px 0px 0px;
+}
+.logo img {
+width: 150px !important;
+}
+.swipe-icon {
+padding: 10px 0px;
+}
+.header-btm p{
+font-size: 10px;
+}
+.header-btm p span{
+font-size: 12px;
+}
+}
+@media (max-width:1062px) {}
+@media (max-width: 575.99px) {
+.logo img {
+width: 132px !important;
+}
+.user-info p {
+font-size: 12px;
+}
+.user-info h3 {
+font-size: 16px;
+}
+.header-btm p {
+font-size: 12px;
+}
+}
+@media (min-width: 1921px) {
+.container-box {
+max-width: 1885px;
+padding: 0 50px;
+}
+}
+@media (min-width: 2000px) {
+footer {
+position: fixed;
+bottom: 0;
+z-index: -9;
+}
+}
