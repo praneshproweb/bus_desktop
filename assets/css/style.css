@@ -32,6 +32,10 @@ a {
   display: block;
 }
 
+.busModule .container-box {
+  padding-bottom: 50px;
+}
+
 .wapper {
   width: 100% !important;
   margin: 0 auto !important;
@@ -97,18 +101,26 @@ a {
   font-weight: 600;
 }
 
+body:has(.wapper.busModule) header.header {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.wapper.busModule {
+  min-height: calc(100vh - 116px);
+  background-color: #fafafa;
+}
+
 .main {
   position: relative;
   width: 100%;
-  background: linear-gradient(180deg, #CFE5FD 1.61%, rgba(232, 243, 210, 0.60) 101.61%);
   padding: 70px 0px 0px 0px;
-  height: 340px;
-
 }
 
 .main::before {
   content: "";
-  background-image: url(../img/banner-bg.svg);
+  background: url(../img/banner-bg.svg), linear-gradient(180deg, #CFE5FD 1.61%, rgba(232, 243, 210, 0.60) 101.61%);
   position: absolute;
   top: 0;
   left: 0px;
@@ -116,7 +128,8 @@ a {
   right: 0px;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -9;
+  z-index: 0;
+  height: 340px;
 }
 
 div.input-block {
@@ -137,6 +150,10 @@ div.input-block input {
   line-height: 16px;
   letter-spacing: 0.055px;
   margin-bottom: 22px;
+}
+
+.busModule .booking-form-box input#datepicker::placeholder {
+  color: #91909c !important;
 }
 
 div.input-block span.placeholder {
@@ -162,7 +179,7 @@ div.input-block span.placeholder {
 
 div.input-block input:valid+span.placeholder,
 div.input-block input:focus+span.placeholder {
-  transform: scale(0.8) translateY(-32px);
+  transform: scale(0.8) translateY(-37px);
   background: #fff;
 }
 
@@ -203,6 +220,10 @@ div.input-block input:focus+span.placeholder {
   border: 1px solid rgba(0, 0, 0, 0.07);
   background: #fff;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+}
+
+.ui-state-hover {
+  background-color: transparent !important;
 }
 
 .ui-widget.ui-widget-content {
@@ -258,9 +279,9 @@ div.input-block input:focus+span.placeholder {
   padding-bottom: 10px;
 }
 
-.ui-datepicker .ui-datepicker-prev {
+/* .ui-datepicker .ui-datepicker-prev {
   left: 13px !important;
-}
+} */
 
 .booking-form ::placeholder {
   margin: 24px 0;
@@ -283,14 +304,15 @@ div.input-block input:focus+span.placeholder {
 }
 
 a.ui-datepicker-prev.ui-corner-all {
-  background-image: url("../img/prev-icon.svg") !important;
+  background-image: url("../img/next-icon.svg") !important;
   background-repeat: no-repeat;
   cursor: pointer;
   height: 1.8em;
   width: 1.8em;
-  top: 9px;
-  left: -5px;
+  top: -7px;
+  left: 0px;
   border: none;
+  transform: rotate(180deg);
 }
 
 a.ui-datepicker-next.ui-corner-all {
@@ -356,18 +378,18 @@ a.ui-datepicker-next.ui-corner-all:hover span {
 }
 
 .rtcs-bus-img {
-  width: 50px ;
-  height: 50px ;
+  width: 50px;
+  height: 50px;
   margin-bottom: 15px;
 }
 
 .rtcs-bus-box {
   width: 112px;
-    height: 135px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   border-radius: 30px;
   border: 1px solid #f0f0f0;
   background: #fff;
@@ -432,9 +454,10 @@ hr {
 }
 
 /* =============== Search Page ================= */
-.search-result-details{
+.search-result-details {
   display: flex;
 }
+
 .side-bar {
   height: calc(100% - 148px);
   background: #fff;
@@ -442,36 +465,42 @@ hr {
   border-radius: 15px;
   min-width: 300px;
 }
-.filtter-btn{
+
+.filtter-btn {
   color: #25233C;
-font-size: 13px;
-font-weight: 400;
-text-transform: capitalize;
-    border: 1px solid #fb7b0e;
-    border-radius: 50px;
-    padding: 8px 16px;
-        margin-right: 12px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: 1px solid #fb7b0e;
+  border-radius: 50px;
+  padding: 8px 16px;
+  margin-right: 12px;
 }
 
 .main-content {
-    margin-left: 50px;
-    width: 100%;
+  margin-left: 50px;
+  width: 100%;
 }
-.seat-and-fare .table th, .seat-and-fare .table td, .userDeatil .table th, .userDeatil .table td{
+
+.seat-and-fare .table th,
+.seat-and-fare .table td,
+.userDeatil .table th,
+.userDeatil .table td {
   background: #FBFCFF !important;
 }
 
 /*.search-title {
   padding-left: 50px;
 }*/
-.bg-light-blue{
+.bg-light-blue {
   background: #FBFCFF !important;
 }
 
-.bg-light-gray{
+.bg-light-gray {
   background: #FAFAFA;
   width: 100%;
 }
+
 .search-title h3 {
   color: #1E3767;
   font-size: 22px;
@@ -576,7 +605,7 @@ text-transform: capitalize;
   padding: 41px 0px 0px 0px;
   width: 100%;
   background: linear-gradient(180deg, #CFE5FD 1.61%, rgba(232, 243, 210, 0.60) 101.61%);
-   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.12);
 }
 
 .search-date .nav-tabs .nav-link.active {
@@ -904,6 +933,10 @@ text-transform: capitalize;
   right: -9px;
 }
 
+.bus-bottom-panel ul .amenitie-nav li:nth-child(1):after {
+  content: none;
+}
+
 .bus-bottom-panel ul li:nth-child(2):after {
   content: none;
 }
@@ -1126,8 +1159,8 @@ text-transform: capitalize;
   margin-right: 8px;
 }
 
-.bustype-btn a:hover{
-   color: #5A596B; 
+.bustype-btn a:hover {
+  color: #5A596B;
 }
 
 .bustype-btn a img {
@@ -1162,10 +1195,11 @@ text-transform: capitalize;
   margin-right: 8px;
 }
 
-.seattype-btn a:hover {  
-color: #5A596B;
+.seattype-btn a:hover {
+  color: #5A596B;
 
 }
+
 .seat-type {
   padding: 12px 0px 14px 20px;
 }
@@ -1634,26 +1668,29 @@ color: #5A596B;
 .yellow-color {
   color: #F08821;
 }
+
 #bd-info .form-check-input:checked {
-    background-color: #ffffff !important;
-    border-color: #fb7d0f !important;
-    border: 4.2px solid #fb7d0f !important;
-}
-.gender .form-check-input:checked::after{
-    border: 1px solid #fa7b0d;
-    position: absolute;
-    content: '';
-    top: -4px;
-    width: 16px;
-    height: 16px;
-    left: -4px;
-    border-radius: 50px;
-    right: 0px;
+  background-color: #ffffff !important;
+  border-color: #fb7d0f !important;
+  border: 4.2px solid #fb7d0f !important;
 }
 
-.gender .form-check-input:checked{
+.gender .form-check-input:checked::after {
+  border: 1px solid #fa7b0d;
+  position: absolute;
+  content: '';
+  top: -4px;
+  width: 16px;
+  height: 16px;
+  left: -4px;
+  border-radius: 50px;
+  right: 0px;
+}
+
+.gender .form-check-input:checked {
   position: relative;
 }
+
 .ticket-price button {
   border-radius: 0px 0px 3px 0px;
   background: linear-gradient(180deg, #FC8814 0%, #F86403 100%);
@@ -1693,14 +1730,15 @@ color: #5A596B;
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 0px 3px;
-background: #FCFCFC;
+  background: #FCFCFC;
 }
 
 .ticket-price .price {
   margin-left: 38px;
 }
 
-.seattype_1.active, .seattype_2.active {
+.seattype_1.active,
+.seattype_2.active {
   border: 1px solid #F86202;
 }
 
@@ -1795,11 +1833,15 @@ background: #FCFCFC;
 }
 
 .busSeat-allconent .seat-and-fare {
-    margin: 0px 40px 24px 40px;
-    background: #FBFCFF;
-    padding: 7px 30px;
+  margin: 0px 40px 24px 40px;
+  background: #FBFCFF;
+  padding: 7px 30px;
 }
-.busSeat-allconent .seat-and-fare table{margin-bottom: 0;}
+
+.busSeat-allconent .seat-and-fare table {
+  margin-bottom: 0;
+}
+
 #bd-detail {
   display: none;
 }
@@ -1924,10 +1966,10 @@ background: #FCFCFC;
 }
 
 .userDeatil {
- padding: 15px 40px;
-    border-radius: 3px;
-    background: #FBFCFF;
-    margin: 25px 0px;
+  padding: 15px 40px;
+  border-radius: 3px;
+  background: #FBFCFF;
+  margin: 25px 0px;
 }
 
 .busDeatil .table th p,
@@ -1976,7 +2018,7 @@ background: #FCFCFC;
 }
 
 .table>:not(caption)>*>* {
-/*  border-bottom: 0;*/
+  /*  border-bottom: 0;*/
 }
 
 .modal-footer {
@@ -2029,7 +2071,7 @@ background: #FCFCFC;
   font-weight: 400;
   letter-spacing: -0.14px;
   padding: 0px 10px !important;
-      background: #fbfcff;
+  background: #fbfcff;
 }
 
 
@@ -2070,9 +2112,9 @@ background: #FCFCFC;
 }
 
 .userDeatil-form {
-  padding: 20px  50px  40px;
+  padding: 20px 50px 40px;
   background: #FBFCFF;
-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -2103,14 +2145,14 @@ box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
 .gender {
-padding: 0px 50px 40px 50px;
-    background: #FBFCFF;
+  padding: 0px 50px 40px 50px;
+  background: #FBFCFF;
 }
 
 .gender .form-check-input:checked {
-background-color: #fb7d0f !important;
-    border-color: #ffffff !important;
-    border: 4px solid #fa7b0d;
+  background-color: #fb7d0f !important;
+  border-color: #ffffff !important;
+  border: 4px solid #fa7b0d;
 }
 
 .contact-text h4 {
@@ -2134,15 +2176,15 @@ background-color: #fb7d0f !important;
 }
 
 .contact-destail {
-    margin-bottom: 40px;
-    margin-top: 30px;
-    padding: 0px 50px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  padding: 0px 50px;
 }
 
 #breadcrumbs {
-padding: 27px 50px 20px 50px;
-    background: #FBFCFF;
-        margin-bottom: 0px;
+  padding: 27px 50px 20px 50px;
+  background: #FBFCFF;
+  margin-bottom: 0px;
 }
 
 .custom-border {
@@ -2177,8 +2219,8 @@ padding: 27px 50px 20px 50px;
 }
 
 .contactDeatil-form {
-   padding: 40px 50px 20px 50px;
-    background: #FBFCFF;
+  padding: 40px 50px 20px 50px;
+  background: #FBFCFF;
 }
 
 .passenger-detail-modal .modal-header {
@@ -2301,37 +2343,46 @@ padding: 27px 50px 20px 50px;
 
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #8f54a0 #ffffff;
-  }
+/* Firefox */
+/* * {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+} */
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
 
-  *::-webkit-scrollbar-thumb {
-    border: 3px solid #ffffff;
-    border-radius: 240px;
-    background: #E9E9E9;
+*::-webkit-scrollbar-thumb {
+  border: 3px solid #ffffff;
+  border-radius: 240px;
+  background: #E9E9E9;
   width: 8px;
 
 
-  }
+}
 
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #fff;
   margin-top: 20px;
+} */
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: 0.2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
 }
 
 .ui-widget.ui-widget-content {
@@ -2408,20 +2459,20 @@ footer {
 }
 
 @media (max-width:1920px) {
-   .home-footer {
+  /* .home-footer {
     position: relative;
     width: 100%;
     background-color: #fff;
     margin-top: 20px;
-        bottom: -22rem;
+    bottom: -22rem;
     z-index: 1;
   }
 
-  .search-footer{
-        bottom: -4rem;
-        position: relative;
-        z-index: -1;
-  }
+  .search-footer {
+    bottom: -4rem;
+    position: relative;
+    z-index: -1;
+  } */
 }
 
 .swipe-icon {
@@ -2430,7 +2481,10 @@ footer {
 
 
 .location-list1,
-.location-list2, .location-list3, .location-list4, .buslocation-list {
+.location-list2,
+.location-list3,
+.location-list4,
+.buslocation-list {
   border-radius: 10px;
   border: 1.2px solid rgba(227, 227, 227, 0.70);
   background: #FFF;
@@ -2455,21 +2509,23 @@ footer {
 }
 
 .location-list3 {
-    top: 109px;
-    left: 100px;
+  top: 109px;
+  left: 100px;
 }
 
 .location-list4 {
-    top: 109px;
-    left: 31rem;
+  top: 109px;
+  left: 31rem;
 }
 
-.location-div, .buslocation-div {
+.location-div,
+.buslocation-div {
   cursor: pointer;
   position: relative;
 }
 
-.location-div::after, .buslocation-div::after {
+.location-div::after,
+.buslocation-div::after {
   content: '';
   border-bottom: 1px solid #EEE;
   display: block;
@@ -2548,7 +2604,7 @@ footer {
   padding-bottom: 5px;
 }
 
-.booking-form-img-tab{
+.booking-form-img-tab {
   background-image: url("../img/home.png");
   background-position: center;
   background-size: cover;
@@ -2560,8 +2616,8 @@ footer {
   opacity: 0.5 !important;
 }
 
-.modal-footer button{
-  border-radius: 0px 0px 0px 0px !important; 
+.modal-footer button {
+  border-radius: 0px 0px 0px 0px !important;
 }
 
 /* ------------======== Tab View ========------------------- */
@@ -2572,8 +2628,9 @@ footer {
   align-items: center;
   gap: 18px;
 }
-.inner-box .item:nth-child(odd){
-flex: 1;
+
+.inner-box .item:nth-child(odd) {
+  flex: 1;
 }
 
 .item .swipe-icon {
@@ -2587,4 +2644,3 @@ flex: 1;
 .unfill {
   fill: #fff !important;
 }
-
