@@ -1,17 +1,11 @@
-// $("a[href^='#']").on("click", function (e) {
-//   e.preventDefault();
-//   var hash = this.hash;
-//   $("a[href^='#']").removeClass("active");
-//   $(this).addClass("active");
-//   $("html, body").animate(
-//     {
-//       scrollTop: $(hash).offset().top - 60,
-//     },
-//     500
-//     // function () {
-//     //   window.location.hash = hash;
-//     // }
-//   );
+// $(document).ready(function () {
+//   $("#view-bus").on("click", function () {
+//     $("#view-bus-pane").toggle(); // Toggle visibility of the div
+
+//     // Change button text based on the div's visibility
+//     var buttonText = $("#myDiv").is(":visible") ? "Hide Div" : "Show Div";
+//     $("#view-bus").text(buttonText);
+//   });
 // });
 
 $("#pickuppoint-location").on("keyup", function () {
@@ -27,8 +21,6 @@ $("#droptpoint-location").on("keyup", function () {
     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
   });
 });
-
-
 
 $(document).ready(function () {
   // Use 'change' event for better compatibility with keyboard navigation
@@ -53,14 +45,13 @@ $(document).ready(function () {
   });
 });
 
-
 // Clear All Filtter
 
 $("#alluncheck").click(function () {
   // Clear data-id attributes for elements with class 'search-result-info'
   $(".search-result-info").removeAttr("data-id");
   $(".fillter-option").removeAttr("data-id");
-    $(".fillter-option").hide();
+  $(".fillter-option").hide();
 
   // Show all elements with class 'search-result-info'
   $(".search-result-info").show();
@@ -68,6 +59,40 @@ $("#alluncheck").click(function () {
   // Remove the 'active' class from elements with class 'seattype'
   $(".seattype_1").removeClass("active");
   $(".seattype_2").removeClass("active");
+
+  // Uncheck checkboxes and radios
+  $('input[type="checkbox"]').prop("checked", false);
+  $('input[type="radio"]').prop("checked", false);
+});
+
+// Clear All Filtter on popup
+
+$("#clearall").click(function () {
+  // Clear data-id attributes for elements with class 'search-result-info'
+  $(".search-result-info").removeAttr("data-id");
+  $(".fillter-option").removeAttr("data-id");
+  $(".fillter-option").hide();
+
+  // Show all elements with class 'search-result-info'
+  $(".search-result-info").show();
+
+  // Remove the 'active' class from elements with class 'seattype'
+  $(".seattype_1").removeClass("active");
+  $(".seattype_2").removeClass("active");
+
+  // Uncheck checkboxes and radios
+  $('input[type="checkbox"]').prop("checked", false);
+  $('input[type="radio"]').prop("checked", false);
+});
+
+//All Clear Button for filtter
+
+$(".clear-btn").click(function () {
+  // Clear data-id attributes for elements with class 'search-result-info'
+  $(".search-result-info").removeAttr("data-id");
+
+  // Show all elements with class 'search-result-info'
+  $(".search-result-info").show();
 
   // Uncheck checkboxes and radios
   $('input[type="checkbox"]').prop("checked", false);
@@ -88,8 +113,6 @@ $("#f-close1").click(function () {
   $(".fillter-option").hide();
 });
 
-
-
 $("#f-close2").click(function () {
   // Clear data-id attributes for elements with class 'search-result-info'
   $(".search-result-info").removeAttr("data-id");
@@ -109,7 +132,7 @@ $("#f-close3").click(function () {
   // Show all elements with class 'search-result-info'
   $(".search-result-info").show();
   // Remove the 'active' class from elements with class 'seattype'
- $('input[type="checkbox"]').prop("checked", false);
+  $('input[type="checkbox"]').prop("checked", false);
   $(".fillter-option").hide();
 });
 
@@ -393,34 +416,35 @@ $(document).ready(function () {
     $(`.${thisdataid}`).show();
   });
 
-  // svg color Change 
-  $('.busSeat-item a').click(function () {
-    $('#boardingDroppingbtn').hide();
-    $('#busDetail').show();
+  // svg color Change
+  $(".busSeat-item a").click(function () {
+    $("#boardingDroppingbtn").hide();
+    $("#busDetail").show();
     var seatprice = 0;
-    var seatid = '';
-    if ($(this).attr('data-iselect') == "true") {
-      $(this).removeAttr('data-iselect');
+    var seatid = "";
+    if ($(this).attr("data-iselect") == "true") {
+      $(this).removeAttr("data-iselect");
       $(this).find("path, polygon, circle, rect").attr("fill", "#fff");
       $(this).find("path, polygon, circle, rect").attr("stroke", "#5A596B");
     } else {
-      $(this).attr('data-iselect', true);
+      $(this).attr("data-iselect", true);
       $(this).find("path, polygon, circle, rect").attr("fill", "#F96604");
       $(this).find("path, polygon, circle, rect").attr("stroke", "#5A596B");
     }
     $('.busSeat-item a[data-iselect="true"]').each(function () {
-      seatid += (seatid != '' ? ',' : '') + $(this).data('seat');
-      seatprice += $(this).data('price');
-    })
-    $('.selectedSeatNo h6, .selectedSeatNo').html(seatid)
-    $('.selectedSeatPrice h4, .selectedSeatPrice').html('₹' + seatprice)
-    $('.selectedSeatNo h5').html($('.busSeat-item a[data-iselect="true"]').length)
+      seatid += (seatid != "" ? "," : "") + $(this).data("seat");
+      seatprice += $(this).data("price");
+    });
+    $(".selectedSeatNo h6, .selectedSeatNo").html(seatid);
+    $(".selectedSeatPrice h4, .selectedSeatPrice").html("₹" + seatprice);
+    $(".selectedSeatNo h5").html(
+      $('.busSeat-item a[data-iselect="true"]').length
+    );
     if ($('.busSeat-item a[data-iselect="true"]').length > 0) {
-      $('#boardingDroppingbtn').show();
-      $('#busDetail').hide();
+      $("#boardingDroppingbtn").show();
+      $("#busDetail").hide();
     }
-  })
-
+  });
 
   $("#uncheck").click(function () {
     $('input[type="checkbox"]').prop("checked", false);
