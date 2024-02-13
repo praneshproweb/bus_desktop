@@ -150,6 +150,7 @@ div.input-block input {
   line-height: 16px;
   letter-spacing: 0.055px;
   margin-bottom: 22px;
+  min-height: 70px;
 }
 
 .busModule .booking-form-box input#datepicker::placeholder {
@@ -164,7 +165,7 @@ div.input-block span.placeholder {
   color: #91909c;
   display: flex;
   align-items: center;
-  top: -6px;
+  top: -3px;
   left: 17px;
   transition: all 0.2s;
   transform-origin: 0% 0%;
@@ -179,7 +180,7 @@ div.input-block span.placeholder {
 
 div.input-block input:valid+span.placeholder,
 div.input-block input:focus+span.placeholder {
-  transform: scale(0.8) translateY(-37px);
+  transform: scale(0.8) translateY(-39px);
   background: #fff;
 }
 
@@ -193,7 +194,7 @@ div.input-block input:focus+span.placeholder {
 }
 
 .booking-form {
-  padding: 36px 50px 58px 50px;
+  padding: 36px 50px 54px 50px;
 }
 
 .form-title h3 {
@@ -300,7 +301,7 @@ div.input-block input:focus+span.placeholder {
   right: 8px;
   padding: 12px 12px;
   pointer-events: none;
-  top: 6px;
+  top: 9px;
 }
 
 a.ui-datepicker-prev.ui-corner-all {
@@ -348,7 +349,7 @@ a.ui-datepicker-next.ui-corner-all:hover span {
   color: #1e3767;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .org-text {
@@ -364,7 +365,7 @@ a.ui-datepicker-next.ui-corner-all:hover span {
   border: 1px solid rgba(0, 0, 0, 0.07);
   background: #fff;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
-  padding: 36px 50px 55px 50px;
+  padding: 36px 50px 43px 50px;
 }
 
 .rtcs-bus-title p {
@@ -394,7 +395,7 @@ a.ui-datepicker-next.ui-corner-all:hover span {
   border: 1px solid #f0f0f0;
   background: #fff;
   padding: 18px 24px 24px 24px;
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 }
 
 
@@ -410,6 +411,8 @@ hr {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 43px;
 }
 
 .pvt-bus-item {
@@ -418,8 +421,8 @@ hr {
   border: 1px solid #f0f0f0;
   flex: 1;
   white-space: nowrap;
-  margin-right: 40px;
-  margin-bottom: 20px;
+  /* margin-right: 40px;
+  margin-bottom: 20px; */
 }
 
 .pvt-bus-inner p {
@@ -612,14 +615,14 @@ hr {
   border-radius: 186px !important;
   background: rgba(255, 255, 255, 0.86) !important;
   padding: 10px 16px !important;
-  color: #5A596B !important;
+  color: #1E3767 !important;
 }
 
 .search-date .nav-tabs .nav-link {
   border: 0px !important;
   background: transparent !important;
   padding: 10px 7px !important;
-  color: #5A596B;
+  color: #1E3767;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -656,7 +659,7 @@ hr {
 
 .owl-nav .owl-prev {
   position: absolute;
-  left: -40px;
+  left: -34px;
   top: -24px;
   background: #fff !important;
   color: #5A596B !important;
@@ -671,7 +674,7 @@ hr {
 
 .owl-nav .owl-next {
   position: absolute;
-  right: -40px;
+  right: -34px;
   top: -24px;
   background: #fff !important;
   color: #5A596B !important;
@@ -793,11 +796,12 @@ hr {
 
 .search-result-info {
   border: 1px solid #CACACA;
-  padding: 35px 0px 0px 0px;
+  padding: 27px 0px 0px 0px;
   border-radius: 4px;
   position: relative;
   margin-bottom: 20px;
   background: #fff;
+  /* height: 155px; */
 }
 
 .view-bus-btn {
@@ -813,7 +817,10 @@ hr {
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
-  padding: 11px 55px;
+  padding: 11px 25px;
+  min-width: 180px;
+  min-height: 36px;
+  display: block;
 }
 
 .bus-fare {
@@ -920,7 +927,7 @@ hr {
 }
 
 .bus-bottom-panel ul li {
-  margin-right: 20px;
+  margin-right: 24px;
   position: relative;
 }
 
@@ -930,7 +937,7 @@ hr {
   position: absolute;
   content: '';
   top: 0px;
-  right: -9px;
+  right: -13px;
 }
 
 .bus-bottom-panel ul .amenitie-nav li:nth-child(1):after {
@@ -962,7 +969,7 @@ hr {
 
 
 .bus-top-panel {
-  padding: 0px 30px 32px 30px;
+  padding: 0px 30px 0px 30px;
 }
 
 .c-policy-content h4 {
@@ -1047,6 +1054,9 @@ hr {
   font-weight: 700;
   line-height: 17px;
   padding: 11px 50px;
+  min-width: 180px;
+  min-height: 36px;
+  display: block;
 }
 
 .bus-bottom-panel .view-bus-btn .nav-link:hover {
@@ -1118,7 +1128,11 @@ hr {
 }
 
 .border-btm {
-  border-bottom: 1px solid #eeeeeeb3;
+  border-bottom: 1px solid #CECECE;
+}
+
+.search-filter .border-btm {
+  border-bottom: 1px solid #EEE;
 }
 
 .live-traking a {
@@ -1153,14 +1167,16 @@ hr {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.36px;
-  padding: 8px 36px;
   border-radius: 186px;
   border: 1px solid #E8E7E7;
   background: #FFF;
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: 8px;
+  min-width: 110px;
+  min-height: 32px;
 }
 
 .bustype-btn a:hover {
@@ -1174,7 +1190,7 @@ hr {
 }
 
 .bus-type h3 {
-  color: #5A596B;
+  color: #1E3767;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.42px;
@@ -1196,7 +1212,10 @@ hr {
   letter-spacing: 0.36px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: 8px;
+  min-width: 110px;
+  min-height: 32px;
 }
 
 .seattype-btn a:hover {
@@ -1352,13 +1371,28 @@ hr {
 
 .bg-light-red {
   background: #FFFBF8;
+  height: 142px;
+  padding: 16px 0px 0px 0px;
+}
+
+.pickup-point-time-content label {
+  color: #5A596B;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.26px;
+  margin-left: 10px;
+}
+
+.bus-top-panel .reting {
+  width: 50px;
+  height: 28px
 }
 
 .reting p {
   border-radius: 3px;
   background: rgba(254, 169, 41, 0.80);
   color: #fff;
-  padding: 8px;
+  padding: 6px;
   font-size: 13px;
   font-weight: 600;
   line-height: 17px;
@@ -1743,18 +1777,19 @@ hr {
 
 .seattype_1.active,
 .seattype_2.active {
-  border: 1px solid #F86202;
+  border: 1px solid rgba(248, 98, 2, 0.70);
 }
 
 
-.busSeat-allinfo .header {
+.busSeat-allinfo .header-sec {
   padding: 32px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
-.busSeat-allinfo .header h4 {
+.busSeat-allinfo .header-sec h4 {
   color: #1E3767;
   font-size: 18px;
   font-weight: 700;
@@ -1763,7 +1798,7 @@ hr {
   margin-bottom: 0;
 }
 
-.busSeat-allinfo .header a {
+.busSeat-allinfo .header-sec a {
   color: #6182E3;
   text-align: center;
   font-size: 12px;
@@ -2834,4 +2869,699 @@ hr {
 
 .unfill {
   fill: #fff !important;
+}
+
+/* ----------------------- Cancel Booking --------------------------- */
+.cancle-banner {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, #CFE5FD 1.61%, rgba(232, 243, 210, 0.60) 101.61%);
+  height: 220px;
+  z-index: 0;
+}
+
+.cancle-content {
+  position: relative;
+  z-index: 1;
+  margin-top: -8rem;
+  margin-bottom: 60px;
+}
+
+.cancel-container-box {
+  padding: 0px 300px;
+}
+
+.cancellation-inner {
+  border-radius: 4px;
+  border: 2px solid #CECECE;
+  background: #FFF;
+  padding: 37px 40px 40px 40px;
+}
+
+.cancel-booking-header {
+  margin-bottom: 23px;
+}
+
+.cancel-booking-header,
+.bording-droping-point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel-bookingTitle h4 {
+  color: rgba(30, 55, 103, 0.90);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.cancel-booking-header button {
+  border-radius: 5px;
+  border: 1.1px solid #5A596B;
+  background: #FCFCFC;
+  color: #5A596B;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.12px;
+  width: 103px;
+  height: 28px;
+}
+
+.booking-id p {
+  color: rgba(90, 89, 107, 0.60);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 29px;
+}
+
+.booking-id p input {
+  color: #5A596B;
+  font-size: 16px;
+  font-weight: 500;
+  /* margin-right: 10px; */
+  max-width: 115px;
+  border: 0;
+}
+
+.busName h3 {
+  color: #1E3767;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.18px;
+  margin-bottom: 28px;
+}
+
+.bording-point p,
+.droping-point p {
+  color: #9C9A9A;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.bording-point-icon img,
+.droping-point-icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.bording-point-icon,
+.droping-point-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+}
+
+.bording-point-info h3,
+.droping-point-info h3 {
+  color: #1E3767;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.bording-point-info h5,
+.droping-point-info h5 {
+  color: #646772;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.14px;
+}
+
+.time-dur p {
+  color: #1E3767;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.bording-point-info {
+  margin-left: 28px;
+}
+
+.droping-point {
+  margin-right: 45px;
+}
+
+.bording-droping-point {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 32px;
+}
+
+.cancel-booking-contactdetails-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel-booking-contactdetails h3 {
+  color: rgba(30, 55, 103, 0.90);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.passengers-name h5,
+.passengers-mobile h5,
+.passengers-emil h5 {
+  color: rgba(30, 55, 103, 0.80);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+
+}
+
+.passengers-name p,
+.passengers-mobile p,
+.passengers-emil p {
+  color: #646772;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.passengers-emil {
+  margin-right: 112px;
+}
+
+.cancel-booking-contactdetails {
+  padding-top: 31px;
+  padding-bottom: 35px;
+}
+
+.cancel-booking-passengersdetails h3 {
+  color: #1E3767;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.col-gap-11 {
+  column-gap: 11px;
+}
+
+.show-Eticket-btn {
+  min-height: 28px;
+  min-width: 103px;
+}
+
+.show-Eticket-btn button {
+  color: #5A596B;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1.1px solid #5A596B;
+  background: #FCFCFC;
+}
+
+.passengerInfo-box {
+  min-height: 70px;
+  width: 190px;
+  background-color: #FFFBF8;
+  border: 1px solid #FCCEAB;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 13px;
+}
+
+.passengerInfo h5 {
+  color: #231F20;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.passengerInfo h5 {
+  color: #231F20;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.passengerInfo p {
+  color: #646772;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+.passengerInfo-icon {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(180deg, #FC8814 0%, #F86403 100%);
+  border-radius: 50px;
+}
+
+.passengerInfo-icon p {
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.transactionDetails-inner .table caption {
+  color: #1E3767;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 23px !important;
+  padding: 0;
+  background: #fff;
+}
+
+.transactionDetails-inner h6 {
+  color: #1E3767;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.32px;
+  margin-bottom: 14px;
+}
+
+.copy-icon {
+  margin-left: 13px;
+}
+
+.transactionDetails-inner .table td {
+  color: #646772;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.transactionDetails-inner .table th input {
+  color: #1E3767;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  width: 106px;
+  border: 0;
+}
+
+.transactionDetails-inner .table th {
+  text-align: right;
+  line-height: 38px;
+  color: #1E3767;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.light-blue {
+  color: #469BFF !important;
+}
+
+.transactionDetails-box {
+  border-radius: 4px;
+  border: 2px solid #CECECE;
+  background: #FFF;
+  padding: 26px 30px;
+}
+
+.transactionDetails-inner hr {
+  margin-bottom: 4px !important;
+}
+
+.cancel-btn {
+  border-radius: 8px;
+  background: linear-gradient(180deg, #FC8814 0%, #F86403 100%);
+  min-height: 60px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.transactionDetails-box button {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.4px;
+  border: 0;
+}
+
+.transactionDetails-box .table>:not(caption)>*>* {
+  padding: 0px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 200px !important;
+}
+
+.backBtn {
+  padding-left: 70px;
+  padding-top: 9px;
+}
+
+.backBtn button {
+  color: #1E3767;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.08) inset;
+  min-height: 32px;
+  min-width: 74px;
+}
+
+.backBtn button i {
+  width: 6px;
+  height: 12px;
+  color: #FF7B00;
+  margin-right: 9px;
+}
+
+.cancelBooking-popupContent h4 {
+  color: #F30A0A;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.cancelBooking-popupContent h2 {
+  color: #1E3767;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.cancelBooking-popupContent p {
+  color: #1E3767;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.cancelBooking-popupContent p span {
+  color: #2B4BBC;
+}
+
+.cancelBooking-popup .modal-dialog {
+  max-width: 450px;
+}
+
+.cancelBooking-popup .modal-body {
+  padding: 25px 50px 54px 50px;
+}
+
+.cancelBooking-popup .cancel-btn {
+  min-height: 54px;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  border: 0;
+  margin-top: 25px;
+}
+
+.cancelBooking-popup .btn-close {
+  background-repeat: no-repeat !important;
+  background: url(../img/icon/cancel-booking/cancle-close.png) !important;
+  opacity: 2 !important;
+  width: 24px;
+  height: 24px;
+  padding: 0px !important;
+}
+
+.cancelBooking-popup .modal-header {
+  margin: 20px 18px;
+  padding: 0 !important;
+}
+
+.cancel-btn2 {
+  border-radius: 8px;
+  background: #fff;
+  border: 1.5px solid #F30A0A;
+  min-height: 54px;
+  width: 100%;
+  color: #F30A0A;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.36px;
+  margin-top: 25px;
+}
+
+.reasonCancel-popupContent h2 {
+  color: #1E3767;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.cancellation-reason-popup .modal-header {
+  padding: 20px 19px 0px 30px !important;
+}
+
+.cancellation-reasonItem a {
+  height: 50px;
+  color: #25233C;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(90, 89, 107, 0.70);
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 15px 25px;
+}
+
+.cancellation-reason {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 21px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #DDE2F4;
+}
+
+.cancellationItem.active {
+  background-color: #F86202;
+  color: #fff;
+  border: 0;
+}
+
+.cancellation-reasonItem a:hover {
+  /* color: inherit !important; */
+}
+
+.cancellation-reason-popup .modal-dialog {
+  max-width: 690px;
+}
+
+.cancellation-reason-popup .modal-body {
+  padding: 0px 30px !important;
+}
+
+.upload-document h5 {
+  color: #25233C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  margin-top: 27px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.file-upload {
+  background: linear-gradient(180deg, #FFFBF8 0%, rgba(255, 251, 248, 0.00) 100%);
+  border: 1.3px solid rgba(34, 60, 92, 0.70);
+  border-style: dashed;
+  width: 100%;
+  min-height: 100px;
+  border-radius: 8px;
+}
+
+.file {
+  position: relative;
+  text-align: center;
+}
+
+.form-control[type=file] {
+  opacity: 0;
+}
+
+.file .form-control {
+  min-height: 100px;
+}
+
+.file-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.file-content .form-label {
+  display: block;
+  color: rgba(37, 35, 60, 0.80);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.upload-document .cancel-btn {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  min-height: 52px;
+}
+
+.upload-document button {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  border: 0;
+}
+
+.confirmation-popupContent h2 {
+  color: #1E3767;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 11px;
+  padding: 0px 8px;
+}
+
+.confirmation-popupContent p {
+  color: rgba(35, 31, 32, 0.70);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.confirmation-popupContent img {
+  margin-bottom: 18px;
+}
+
+.confirmation-popup .modal-body {
+  text-align: center;
+  padding: 0px 49px;
+}
+
+.confirmation-popup .modal-dialog {
+  max-width: 450px;
+}
+
+.confirmation-popupContent button {
+  border: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.confirmation-popupContent .cancel-btn {
+  min-width: 130px;
+  min-height: 46px;
+}
+
+.confirmation-popup .modal-header {
+  padding: 16px 18px 0px 0px !important;
+}
+
+.plr-12 {
+  padding: 15px 12px;
+}
+
+.copy-btn:hover {
+  transform: scale(1.3);
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.copied {
+  width: 100px;
+  opacity: 0;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000;
+  padding: 15px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: .4s opacity;
 }

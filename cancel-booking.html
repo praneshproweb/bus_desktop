@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.green.min.css" />
+    <link rel="stylesheet" href="https://pro.gstsuvidhakendra.org.in/assets/admin/css/header-footer.css">
+
+<body class="bg-light-gray">
+    <div class="wapper busModule">
+
+        <section id="cancel-booking-desktopView">
+            <header id="commonContent">
+            </header>
+            <!-- <header class=" bg-white custom-drop-shadow">
+                <div class="container-fluid header-gap">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between align-items-center py-3">
+                                <div class="logo">
+                                    <img src="assets/img/logo.png" class="img-fluid" />
+                                </div>
+                                <div class="d-flex d-flex align-items-center">
+                                    <div class="user-img">
+                                        <img src="assets/img/m-logo.png" class="me-3" />
+                                    </div>
+                                    <div class="user-info">
+                                        <h3>Vipin Chouhan</h3>
+                                        <p>Branch ID: <span>ef7f1a</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <div class="content">
+                <section class="cancle-banner">
+                    <div class="backBtn">
+                        <button type="button" onclick="location.href='index.html';"><i class="fas fa-chevron-left"></i>
+                            Back</button>
+                    </div>
+                </section>
+                <section class="cancle-content">
+                    <div class="cancel-container-box">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="cancellation-box">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="cancellation-inner">
+
+                                                <div class="cancel-booking-header">
+                                                    <div class="cancel-bookingTitle">
+                                                        <h4>Booking Details</h4>
+                                                    </div>
+                                                    <button type="button">View Details</button>
+                                                </div>
+                                                <div class="booking-id">
+                                                    <p>Booking ID: <input id="copyClipboard" value="BKG75642895"
+                                                            readonly></input> <span id="copyButton"
+                                                            onclick="copybookingid()" class="copy-btn"><img
+                                                                src="assets/img/icon/copy-icon.png"></span></p>
+                                                </div>
+                                                <div id="copied-success" class="copied">
+                                                    <span>Copied</span>
+                                                </div>
+                                                <div class="busName">
+                                                    <h3>NueGo</h3>
+                                                </div>
+                                                <div class="bording-droping-point">
+                                                    <div class="bording-point">
+                                                        <div class="bording-point-icon">
+                                                            <img src="assets/img/bus-icon.png" class="ms-0">
+                                                            <p> Boarding
+                                                                Point</p>
+                                                        </div>
+                                                        <div class="bording-point-info">
+                                                            <h3>Delhi</h3>
+                                                            <h5>Kashmere Gate Metro <br>Gate No.5</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="time-dur text-center">
+                                                        <img src="assets/img/icon/timedue-icon.svg">
+                                                        <p>02h 05m</p>
+                                                    </div>
+
+                                                    <div class="droping-point">
+                                                        <div class="droping-point-icon">
+                                                            <p> Boarding
+                                                                Point</p>
+                                                            <img src="assets/img/bus-icon.png" class="me-0">
+                                                        </div>
+                                                        <div class="droping-point-info">
+                                                            <h3>Delhi</h3>
+                                                            <h5>Kashmere Gate Metro Gate No.5</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="cancel-booking-contactdetails">
+                                                    <h3>Contact Details</h3>
+
+                                                    <div class="cancel-booking-contactdetails-info">
+                                                        <div class="passengers-name">
+                                                            <h5>Vipin Chouhan</h5>
+                                                            <p>Passenger Name</p>
+                                                        </div>
+
+                                                        <div class="passengers-mobile">
+                                                            <h5>9876543210</h5>
+                                                            <p>Mobile Number</p>
+                                                        </div>
+
+                                                        <div class="passengers-emil">
+                                                            <h5>mjain@gmail.com</h5>
+                                                            <p>E-mail ID</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+
+                                                <div class="cancel-booking-passengersdetails">
+                                                    <div class="d-flex align-items-center justify-content-between pb-4">
+                                                        <div class="d-flex align-items-center col-gap-11">
+                                                            <img src="assets/img/icon/user.png">
+                                                            <h3>Passengers</h3>
+                                                        </div>
+
+                                                        <div class="show-Eticket-btn">
+                                                            <button>Show E-Ticket</button>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="cancel-booking-passengersdetails-info">
+                                                        <div class="passengerInfo-box">
+                                                            <div class="passengerInfo-icon">
+                                                                <p>5</p>
+                                                            </div>
+                                                            <div class="passengerInfo">
+                                                                <h5>Vipin Chouhan</h5>
+                                                                <p>Passengers 1</p>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="cancle-tabview">
+                                                <div class="transactionDetails-box mb-20">
+                                                    <div class="transactionDetails-inner">
+                                                        <table class="table table-borderless  caption-top mb-0">
+                                                            <caption>Transaction Details</caption>
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Payment Method</td>
+                                                                    <th>Paytm</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Status</td>
+                                                                    <th class="light-blue">Paid</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Booking ID</td>
+                                                                    <th>BKG75642895 <span class="copy-icon"> <img
+                                                                                src="assets/img/icon/copy-icon2.svg">
+                                                                        </span></th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Transaction</td>
+                                                                    <th><input id="copyClipboardtransactionid"
+                                                                            value="BKG75642" readonly></input><span
+                                                                            id="copyButton"
+                                                                            onclick="copytransactionid()"
+                                                                            class="copy-icon copy-btn"> <img
+                                                                                src="assets/img/icon/copy-icon2.svg">
+                                                                        </span></th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Reference ID</td>
+                                                                    <th>BKG75642895 <span class="copy-icon"> <img
+                                                                                src="assets/img/icon/copy-icon2.svg">
+                                                                        </span></th>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="transactionDetails-box">
+                                                    <div class="transactionDetails-inner">
+                                                        <h6>Fare Summary</h6>
+                                                        <div class="bg-light-blue plr-12">
+                                                            <table class="table table-borderless">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Base Fare</td>
+                                                                        <th>₹649</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="pb-0">Taxes & Fees</td>
+                                                                        <th class="pb-0">₹20</th>
+                                                                    </tr>
+
+
+                                                                </tbody>
+                                                            </table>
+                                                            <hr>
+                                                            <table class="table table-borderless mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col" class="text-start">Total Amount
+                                                                        </th>
+                                                                        <th scope="col">₹669</th>
+
+                                                                    </tr>
+                                                                </thead>
+
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="button" class="cancel-btn"
+                                                        data-bs-target="#cancelBooking-popup"
+                                                        data-bs-toggle="modal">Cancel
+                                                        Booking</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <button type="button" class="cancel-btn tabview-btn"
+                                            data-bs-target="#cancelBooking-popupTabview" data-bs-toggle="modal">Cancel
+                                            Booking</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="mobile-view">
+            <div class="cancellation-inner">
+                <header>
+                    <div class="backBtn-cancelBooking-info">
+                        <div class="backBtn-cancelBooking">
+                            <button><i class="fas fa-chevron-left yellow-color"></i></button>
+                            <p>Booking Details</p>
+                        </div>
+                        <button type="button" class="viewDetail">View Details</button>
+                    </div>
+                </header>
+                <div class="cancellation-bookingId">
+                    <div class="booking-id">
+                        <p>Booking ID: <span id="copyClipboard">BKG75642895</span> <span id="copyButton"
+                                onclick="copy()" class="copy-btn"><img src="assets/img/icon/copy-icon.png"></span></p>
+                    </div>
+                </div>
+
+                <div class="busName">
+                    <h3>NueGo</h3>
+                </div>
+                <div class="bording-droping-point">
+                    <div class="bording-point">
+                        <div class="bording-point-icon">
+                            <img src="assets/img/bus-icon.png" class="ms-0">
+                            <p> Boarding
+                                Point</p>
+                        </div>
+                        <div class="bording-point-info">
+                            <h3>Delhi</h3>
+                            <h5>Kashmere Gate Metro Gate No.5</h5>
+                        </div>
+                    </div>
+                    <div class="time-dur text-center">
+                        <p>02h 05m</p>
+                        <img src="assets/img/icon/cancel-booking/line.svg">
+
+                    </div>
+
+                    <div class="droping-point">
+                        <div class="droping-point-icon">
+                            <img src="assets/img/bus-icon.png" class="ms-0">
+                            <p> Boarding
+                                Point</p>
+                        </div>
+                        <div class="droping-point-info">
+                            <h3>Delhi</h3>
+                            <h5>Kashmere Gate Metro Gate No.5</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cancel-booking-contactdetails">
+                    <h3>Contact Details</h3>
+
+                    <div class="cancel-booking-contactdetails-info">
+                        <div class="passengers-name">
+                            <h5>Vipin Chouhan</h5>
+                            <p>Passenger Name</p>
+                        </div>
+
+                        <div class="passengers-mobile">
+                            <h5>9876543210</h5>
+                            <p>Mobile Number</p>
+                        </div>
+
+                        <div class="passengers-emil me-0">
+                            <h5>mjain@gmail.com</h5>
+                            <p>E-mail ID</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cancel-booking-passengersdetails">
+                    <div class="d-flex align-items-center justify-content-between pb-4">
+                        <div class="d-flex align-items-center col-gap-11">
+                            <img src="assets/img/icon/user.png">
+                            <h3>Passengers</h3>
+                        </div>
+
+                        <div class="show-Eticket-btn">
+                            <button>Show E-Ticket</button>
+                        </div>
+                    </div>
+
+
+                    <div class="cancel-booking-passengersdetails-info">
+                        <div class="passengerInfo-box">
+                            <div class="passengerInfo-icon">
+                                <p>5</p>
+                            </div>
+                            <div class="passengerInfo">
+                                <h5>Vipin Chouhan</h5>
+                                <p>Passengers 1</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="transactionDetails-box mb-20">
+                <div class="transactionDetails-inner">
+                    <table class="table table-borderless  caption-top mb-0">
+                        <caption>Transaction Details</caption>
+
+                        <tbody>
+                            <tr>
+                                <td>Payment Method</td>
+                                <th>Paytm</th>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <th class="light-blue">Paid</th>
+                            </tr>
+                            <tr>
+                                <td>Booking ID</td>
+                                <th>BKG75642895 <span class="copy-icon"> <img src="assets/img/icon/copy-icon2.svg">
+                                    </span></th>
+                            </tr>
+                            <tr>
+                                <td>Transaction</td>
+                                <th>BKG75642895 <span class="copy-icon"> <img src="assets/img/icon/copy-icon2.svg">
+                                    </span></th>
+                            </tr>
+                            <tr>
+                                <td>Reference ID</td>
+                                <th>BKG75642895 <span class="copy-icon"> <img src="assets/img/icon/copy-icon2.svg">
+                                    </span></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="transactionDetails-box">
+                <div class="transactionDetails-inner">
+                    <h6>Fare Summary</h6>
+                    <div class="bg-light-blue plr-12">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>Base Fare</td>
+                                    <th>₹649</th>
+                                </tr>
+                                <tr>
+                                    <td class="pb-0">Taxes & Fees</td>
+                                    <th class="pb-0">₹20</th>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <hr>
+                        <table class="table table-borderless mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-start">Total Amount
+                                    </th>
+                                    <th scope="col">₹669</th>
+
+                                </tr>
+                            </thead>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button type=" button" class="cancel-btn mobileview-btn" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Cancel
+                Booking</button>
+        </section>
+
+
+        <footer id="footer-section" class="text-center">
+        </footer>
+    </div>
+
+
+    <!-- ----------- ============= Cancel Booking Popup ===============------------------------- -->
+    <section class="cancelBooking-popup">
+        <div class="modal fade " id="cancelBooking-popup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cancelBooking-popupContent">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Cancel Booking</h4>
+                                    <h2>Are you sure you want to cancel your ticket booking?</h2>
+                                    <p>Please review the <span>cancellation policy</span> before proceeding. Your refund
+                                        will be
+                                        processed
+                                        according to our <span>terms and
+                                            conditions.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="cancel-btn" data-bs-target="#cancellation-reason-popup"
+                            data-bs-toggle="modal">Yes, Cancel
+                            Booking</button>
+
+                        <button type="button" class="cancel-btn2" data-bs-dismiss="modal" aria-label="Close">No, Don,t
+                            Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cancellation-reason-popup">
+        <div class="modal fade" id="cancellation-reason-popup" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="reasonCancel-popupContent">
+                            <h2>Choose a reason for cancellation</h2>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cancellation-reason">
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Medical Emergency</a>
+                                        </div>
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Change in Travel
+                                                Plans</a>
+                                        </div>
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Family Emergency</a>
+                                        </div>
+
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Flight Cancellation by
+                                                Airline</a>
+                                        </div>
+
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Government Travel
+                                                Restrictions</a>
+                                        </div>
+
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Duplicate Booking</a>
+                                        </div>
+
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Passenger Death</a>
+                                        </div>
+
+                                        <div class="cancellation-reasonItem">
+                                            <a href="javasript:void(0);" class="cancellationItem">Others</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="upload-document">
+                                        <h5>Upload supporting documents <span class="fw-300">(if any)</span></h5>
+                                        <div class="file-upload">
+                                            <div class="file">
+                                                <input class="form-control" type="file" id="formFile">
+                                                <div class="file-content">
+                                                    <img src="assets/img/icon/cancel-booking/cloud_upload.svg"
+                                                        class="text-center">
+                                                    <label for="formFile" class="form-label">Upload</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="cancel-btn" data-bs-target="#confirmation-popup"
+                                            data-bs-toggle="modal">Confirm</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="confirmation-popup">
+        <div class="modal fade " id="confirmation-popup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="confirmation-popupContent">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="assets/img/icon/cancel-booking/confirmation.svg">
+                                    <h2>Booking Cancellation Successful!</h2>
+                                    <p>Your ticket booking has been canceled as requested. A confirmation email with
+                                        refund details will be sent to your registered email address. Thank you for
+                                        choosing our service.
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="button" class="cancel-btn" data-bs-dismiss="modal"
+                                aria-label="Close">Ok</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------------------- Tab View Popup----------------------- -->
+
+    <section class="cancelBooking-popup">
+        <div class="modal fade " id="cancelBooking-popupTabview" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cancelBooking-popupContent">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>Cancel Booking</h4>
+                                    <h2>Are you sure you want to cancel your ticket booking?</h2>
+                                    <p>Please review the <span>cancellation policy</span> before proceeding. Your refund
+                                        will be
+                                        processed
+                                        according to our <span>terms and
+                                            conditions.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="cancel-btn" data-bs-target="#cancellation-reason-popupTabview"
+                            data-bs-toggle="offcanvas" aria-controls="offcanvasBottom">Yes, Cancel
+                            Booking</button>
+
+                        <button type="button" class="cancel-btn2" data-bs-dismiss="modal" aria-label="Close">No, Don,t
+                            Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cancellation-reason-popupTabview">
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="cancellation-reason-popupTabview"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="reasonCancel-popupContent">
+                    <h2>Choose a reason for cancellation</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="cancellation-reason">
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Medical Emergency</a>
+                                </div>
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Change in Travel
+                                        Plans</a>
+                                </div>
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Family Emergency</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Flight Cancellation by
+                                        Airline</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Government Travel
+                                        Restrictions</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Duplicate Booking</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Passenger Death</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Others</a>
+                                </div>
+                            </div>
+
+                            <div class="upload-document">
+                                <h5>Upload supporting documents <span class="fw-300">(if any)</span></h5>
+                                <div class="file-upload">
+                                    <div class="file">
+                                        <input class="form-control" type="file" id="formFile">
+                                        <div class="file-content">
+                                            <img src="assets/img/icon/cancel-booking/cloud_upload.svg"
+                                                class="text-center">
+                                            <label for="formFile" class="form-label">Upload</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="cancel-btn" data-bs-target="#confirmation-popupTabview"
+                    data-bs-toggle="modal">Confirm</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="confirmation-popup">
+        <div class="modal fade " id="confirmation-popupTabview" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="confirmation-popupContent">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="assets/img/icon/cancel-booking/confirmation.svg">
+                                    <h2>Booking Cancellation Successful!</h2>
+                                    <p>Your ticket booking has been canceled as requested. A confirmation email with
+                                        refund details will be sent to your registered email address. Thank you for
+                                        choosing our service.
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="button" class="cancel-btn" data-bs-dismiss="modal"
+                                aria-label="Close">Ok</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------- Mobile View Popup----------------------- -->
+    <section class="cancelBooking-popupMobileview">
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="cancelBooking-popupContent">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>Cancel Booking</h4>
+                            <h2>Are you sure you want to cancel your ticket booking?</h2>
+                            <p>Please review the <span>cancellation policy</span> before proceeding. Your refund
+                                will be
+                                processed
+                                according to our <span>terms and
+                                    conditions.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="cancel-btn" data-bs-target="#cancellation-reason-popupMobileview"
+                    data-bs-toggle="offcanvas" aria-controls="offcanvasBottom">Yes, Cancel
+                    Booking</button>
+
+                <button type="button" class="cancel-btn2" data-bs-dismiss="modal" aria-label="Close">No, Don,t
+                    Cancel</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cancellation-reason-popupMobileview">
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="cancellation-reason-popupMobileview"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="reasonCancel-popupContent">
+                    <h2>Choose a reason for cancellation</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="cancellation-reason">
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Medical Emergency</a>
+                                </div>
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Change in Travel
+                                        Plans</a>
+                                </div>
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Family Emergency</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Flight Cancellation by
+                                        Airline</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Government Travel
+                                        Restrictions</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Duplicate Booking</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Passenger Death</a>
+                                </div>
+
+                                <div class="cancellation-reasonItem">
+                                    <a href="javasript:void(0);" class="cancellationItem">Others</a>
+                                </div>
+                            </div>
+
+                            <div class="upload-document">
+                                <h5>Upload supporting documents <span class="fw-300">(if any)</span></h5>
+                                <div class="file-upload">
+                                    <div class="file">
+                                        <input class="form-control" type="file" id="formFile">
+                                        <div class="file-content">
+                                            <img src="assets/img/icon/cancel-booking/cloud_upload.svg"
+                                                class="text-center">
+                                            <label for="formFile" class="form-label">Upload</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="cancel-btn" data-bs-target="#confirmation-popupMobileview"
+                    data-bs-toggle="offcanvas" aria-controls="offcanvasBottom">Confirm</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="confirmation-popupMobileview">
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="confirmation-popupMobileview"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="confirmation-popupContent">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <img src="assets/img/icon/cancel-booking/confirmation.svg">
+                            <h2>Booking Cancellation Successful!</h2>
+                            <p>Your ticket booking has been canceled as requested. A confirmation email with
+                                refund details will be sent to your registered email address. Thank you for
+                                choosing our service.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="cancel-btn" data-bs-dismiss="offcanvas" aria-label="Close">Ok</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/jquery-3.7.0.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/tab-view.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

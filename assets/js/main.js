@@ -1,12 +1,3 @@
-// $(document).ready(function () {
-//   $("#view-bus").on("click", function () {
-//     $("#view-bus-pane").toggle(); // Toggle visibility of the div
-
-//     // Change button text based on the div's visibility
-//     var buttonText = $("#myDiv").is(":visible") ? "Hide Div" : "Show Div";
-//     $("#view-bus").text(buttonText);
-//   });
-// });
 
 $("#pickuppoint-location").on("keyup", function () {
   var value = $(this).val().toLowerCase();
@@ -109,7 +100,6 @@ $("#f-close1").click(function () {
   $(".search-result-info").show();
   // Remove the 'active' class from elements with class 'seattype'
   $(".seattype_1").removeClass("active");
-  $(".seattype_2").removeClass("active");
   $(".fillter-option").hide();
 });
 
@@ -121,7 +111,6 @@ $("#f-close2").click(function () {
   $(".search-result-info").show();
   // Remove the 'active' class from elements with class 'seattype'
   $(".seattype_1").removeClass("active");
-  $(".seattype_2").removeClass("active");
   $(".fillter-option").hide();
 });
 
@@ -133,6 +122,28 @@ $("#f-close3").click(function () {
   $(".search-result-info").show();
   // Remove the 'active' class from elements with class 'seattype'
   $('input[type="checkbox"]').prop("checked", false);
+  $(".fillter-option").hide();
+});
+
+$("#f-close4").click(function () {
+  // Clear data-id attributes for elements with class 'search-result-info'
+  $(".search-result-info").removeAttr("data-id");
+  $(".fillter-option").removeAttr("data-id");
+  // Show all elements with class 'search-result-info'
+  $(".search-result-info").show();
+  // Remove the 'active' class from elements with class 'seattype'
+  $(".seattype_2").removeClass("active");
+  $(".fillter-option").hide();
+});
+
+$("#f-close5").click(function () {
+  // Clear data-id attributes for elements with class 'search-result-info'
+  $(".search-result-info").removeAttr("data-id");
+  $(".fillter-option").removeAttr("data-id");
+  // Show all elements with class 'search-result-info'
+  $(".search-result-info").show();
+  // Remove the 'active' class from elements with class 'seattype'
+  $(".seattype_2").removeClass("active");
   $(".fillter-option").hide();
 });
 
@@ -520,6 +531,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all menu items
+  const menuItems = document.querySelectorAll(".cancellationItem");
+
+  // Add click event listener to each menu item
+  menuItems.forEach(function (item) {
+    item.addEventListener("click", function () {
+      // Remove active class from all menu items
+      menuItems.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      // Add active class to the clicked menu item
+      this.classList.add("active");
+    });
+  });
+});
+
 // date picker for Home page
 $("#datepicker").datepicker({
   minDate: 0,
@@ -549,7 +578,7 @@ $(".date-nav").owlCarousel({
       items: 2,
     },
     1000: {
-      items: 10,
+      items: 12,
     },
   },
 });
